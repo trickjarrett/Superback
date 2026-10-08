@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Super Back",
+  "version": "1.0.0",
+  "description": "Skip back through this tab's history to the most recent page on another website.",
+  "permissions": ["tabs", "webNavigation"],
+  "background": { "scripts": ["background.js"] },
+  "action": {
+    "default_title": "Super Back — go back to another website",
+    "default_icon": { "16": "icons/super-back.svg", "32": "icons/super-back.svg" },
+    "default_area": "navbar"
+  },
+  "icons": { "48": "icons/super-back.svg", "96": "icons/super-back.svg" },
+  "commands": {
+    "super-back": {
+      "suggested_key": { "default": "Alt+Shift+Left" },
+      "description": "Go back to the most recent page on another website"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "super-back@local.trick",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}

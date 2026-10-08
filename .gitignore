@@ -1,0 +1,5 @@
+node_modules/
+artifacts/
+.superpowers/
+extension/background.js
+*.log
